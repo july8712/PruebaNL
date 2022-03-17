@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html con columna responsive</title>
+</head>
+<body>
+    <style>
+         body {
+            margin: 0;
+            padding: 0;
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+            font-family: Arial,Helvetica,sans-serif;
+            box-sizing: border-box;
+            background-color: #dedede;
+        }
+
+        img{
+            display: block;
+        }
+
+        table {
+            border-spacing: 0;
+        }
+
+        table td {
+            border-collapse: collapse;
+            box-sizing: border-box;
+            /* padding:25px; */
+        }
+
+        .container{
+            width: 625px;
+        }
+
+        .publicidadCont td{
+            padding: 0;
+        }
+
+        .boton{
+            border: 2px solid #3b80d8;
+            border-radius:5px;
+            padding: 15px 25px;
+            text-decoration: none;
+        }
+
+        .columnasMobile{
+            display: none;
+        }
+
+
+
+    </style>
+
+    <table style="max-width:650px;" width="100%"  bgcolor="#dedede" >
+        <tr class="publicidadCont">
+            <td>
+                <table style="width: 100%;">
+                    <tr>
+                        <td style="width: 20%;">
+                            <span style="color: #00175a;" class="publicidad">PUBLICIDAD</span>
+                        </td>
+                        <td style="width: 80%; text-align: right;">
+                            <a style="color: #00175a;" href="#" class="publicidad">¿Tenés problemas para ver este email? Hacé
+                                <span>click aquí</span></a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table bgcolor="#ffffff" class="container" align="center">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <img src="https://i.postimg.cc/mDDF3Jp5/logo-american-express.png"   alt="Logo American Express">
+                            </td>
+                            <td>
+                                <img src="https://i.postimg.cc/CKM4tv6j/tarjeta.png" alt="Tarjeta American Express">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h1>Hola, <’Nombre’></h1>
+                            </td>
+                            <td style="border-bottom:1px solid #dedede">
+                                <a href="#" class="boton">Mi Cuenta</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <img src="https://i.postimg.cc/CMktDxXX/portada.jpg" width="625" height="321" alt="Beneficio Bienvenida">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <p>Por ser Socio de American Express
+                                ya podés disfrutar de un nuevo mundo de recompensas y beneficios exclusivos.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="margin-bottom:25px;" colspan="2">
+                                <p>Tu beneficio elegido es:</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <table style="margin-top:25px;" class="container" align="center">
+        <tbody>
+            <!-- Versión Desktop -->
+            <tr class="columnasDesktop" bgcolor="#ffffff">
+                <td>
+                    <img src="https://i.postimg.cc/hGYw8zSW/paisaje.jpg" width="311" height="285" alt="Paisaje">
+                </td>
+                <td >
+                    <p>14.000</p>
+                    <p>puntos Membership Rewards®1</p>
+                    <p>por alcanzar un consumo de $40.000 dentro de los primeros 3 meses de recibida La Tarjeta.2</p>
+                    <p>Con esta cantidad de puntos podés canjear un pasaje a Montevideo y Punta del Este, Catamarca,
+                        Formosa, La
+                        Rioja,
+                        Mendoza, Corrientes, Neuquén, Posadas, Resistencia, San Luis, Santiago del Estero, Tucumán.</p>
+                </td>
+            </tr>
+            <!-- Versión Mobile -->
+            <tr class="columnasMobile">
+                <td colspan="2">
+                    <img src="https://i.postimg.cc/hGYw8zSW/paisaje.jpg" width="311" height="285" alt="Paisaje">
+                </td>
+            </tr>
+            <tr class="columnasMobile">
+                <td colspan="2">
+                    <p>14.000</p>
+                    <p>puntos Membership Rewards®1</p>
+                    <p>por alcanzar un consumo de $40.000 dentro de los primeros 3 meses de recibida La Tarjeta.2</p>
+                    <p>Con esta cantidad de puntos podés canjear un pasaje a Montevideo y Punta del Este, Catamarca,
+                        Formosa, La
+                        Rioja,
+                        Mendoza, Corrientes, Neuquén, Posadas, Resistencia, San Luis, Santiago del Estero, Tucumán.</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
